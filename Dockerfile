@@ -5,7 +5,7 @@ RUN mkdir /data
 
 WORKDIR /data
 
-RUN git clone https://github.com/m-schuetz/LAStools.git
+RUN git clone https://github.com/LAStools/LAStools.git
 WORKDIR /data/LAStools/LASzip
 RUN mkdir build
 RUN cd build && cmake -DCMAKE_BUILD_TYPE=Release ..
